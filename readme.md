@@ -1,9 +1,11 @@
 # Banker's Algorithm Simulator
 
 ## Overview
+
 The Banker's Algorithm Simulator is a web-based tool designed to demonstrate the Banker's Algorithm, a resource allocation and deadlock avoidance technique used in operating systems. This project allows users to input resource allocation data and visualize whether a system is in a safe state, an unsafe state, or a deadlock condition.
 
 ## Features
+
 - **Safe State Detection:** Determines if the system is in a safe state and provides a safe sequence of processes.
 - **Visualization:** Displays the sequence of processes graphically using D3.js.
 - **Real-time Feedback:**
@@ -16,10 +18,29 @@ The Banker's Algorithm Simulator is a web-based tool designed to demonstrate the
 ## Technologies Used
 
 ### Frontend
+
 - HTML/CSS for structure and styling.
 - JavaScript for client-side logic.
 - D3.js for dynamic graph visualization.
 
 ### Backend
+
 - Flask (Python) for handling server-side logic and API requests.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/bankers-algorithm-simulator.git
+   cd bankers-algorithm-simulator
+   ```
+2. Install dependencies:
+   ```bash
+   pip install Flask
+   ```
+3. Run the application:
+   ```bash
+   python app.py
+   ```
+4. Open your browser and navigate to `http://localhost:5000`.
 
