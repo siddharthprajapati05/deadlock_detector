@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Banker's Algorithm Simulator</h1>
+
+    <div id="input-section">
+        <h3>Enter Matrices</h3>
+        <textarea id="allocation" placeholder="Enter Allocation Matrix"></textarea>
+        <textarea id="maximum" placeholder="Enter Maximum Matrix"></textarea>
+        <textarea id="available" placeholder="Enter Available Resources"></textarea>
+        
+        <button onclick="runBankersAlgorithm()">Check Safe State</button>
+        <button onclick="clearFields()">Clear</button> <!-- Clear button added -->
+    </div>
+
+    <p id="result"></p>
+
+    <div id="graph"></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
