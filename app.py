@@ -669,7 +669,7 @@ with tab4:
             else:
                 status_placeholder.success("✅ System operating normally")
 
-## Footer
+# Footer
 st.markdown("---")
 st.markdown("""
 **Automated Deadlock Detection Tool** - Uses Banker's Algorithm for safe state analysis.
